@@ -1,0 +1,414 @@
+html
+    scroll-behavior: smooth
+
+nav
+    @include flex(column, center, center)
+    background: #0691DA
+    #nav_text
+        display: flex
+        justify-content: center
+        font-size: small
+        font-family: sans-serif
+        color: white
+        background: #43b0f1
+        padding: 5px
+        width: 100%
+    #nav_menu_secciones
+        display: flex
+        justify-content: space-between
+        width: 100%
+        padding: 10px
+        #nav_menu_secciones_izq
+            display: flex
+            #logo
+                display: flex
+                img
+                    width: 60px
+        #nav_menu_secciones_centro
+            display: flex
+            align-items: center
+            #text_3
+                font-size: 1.3rem
+                font-weight: bold
+                color: #FFFFFF
+        #nav_menu_secciones_der
+                display: flex
+                align-items: center
+                font-weight: 100
+                background: #0691DA
+                gap: 15px
+                #anclas
+                    font-family: sans-serif
+                    color: white
+                    font-size: 0.7rem
+                    &:hover
+                        cursor: pointer
+                        border-radius: 10px
+                        background: #41a3d894
+                .contenedor_Servicios
+                    position: relative
+                    .contenedor_Servicios_sub
+                        display: none
+                        position: absolute
+                        top: 100%
+                        z-index: 2
+                    &:hover
+                        .contenedor_Servicios_sub
+                            display: flex
+                            flex-direction: column
+                            align-items: center
+                            gap: 18px
+                            font-family: sans-serif
+                            background: #dce3f2
+                            width: 170px
+                            border-radius: 10px
+                            padding: 20px
+                            font-size: 0.8rem
+                            .servicios
+                                &:hover
+                                    transform: scale(1.2)
+                .contenedor_Contacto
+                    position: relative
+                    .contenedor_Contacto_sub
+                        display: none
+                        position: absolute
+                        top: 100%
+                        right: 1px
+                        .persona
+                            display: flex
+                            justify-content: center
+                            gap: 10px
+                            padding: 14px
+                            border-bottom: 1px solid #0691DA
+                            img
+                                width: 20px
+                                &:hover
+                                    transform: scale(1.4)
+                    &:hover
+                        .contenedor_Contacto_sub
+                            display: flex
+                            flex-direction: column
+                            justify-content: center
+                            gap: 10px
+                            font-family: sans-serif
+                            background: #dce3f2
+                            width: 190px
+                            gap: 10px
+                            padding: 10px
+                            border-radius: 10px
+                            font-size: 0.8rem
+
+.slider-frame
+        width: 100%
+        animation: slide 14s infinite alternate 
+        ul
+            display: flex
+            width: 700%
+            li
+                list-style: none
+                width: 100%
+                img
+                    width: 100%
+                    height: 450px
+
+.marcas
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    gap: 5%
+    padding: 10px
+    img
+        width: 70px
+        
+.contactame_img
+    display: flex
+    justify-content: space-around
+    align-items: center
+    padding: 10px
+    border-top: 1px solid #1a1818
+    width: 100%
+    p
+        font-size: 1.1rem
+        color: #1e3d58
+        font-weight: 500
+        animation: scale 2s infinite alternate
+    img
+        width: 35px
+        &:hover
+            transform: scale(1.4)
+
+.descripcion_titulo
+    display: flex
+    justify-content: center
+    font-size: 1.1rem
+    width: 100%
+    padding: 10px
+    font-family: sans-serif
+
+.nuestros_servicios
+    font-weight: 600
+    padding: 10px
+    font-size: 1.6rem
+
+#section_refrigeracion
+    overflow-x: hidden
+    #section_refrigeracion_descripcion
+        display: flex
+        flex-direction: column
+        width: 100%
+        #descripcion_titulo1
+            background: #0690da31
+        #descripcion
+            .content_nuestros_servicios
+                text-align: center
+                background: #5dafdc1c
+            width: 100%
+            h2
+                color: #1e3d58
+            .logo_y_texto_rf
+                position: relative
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                padding: 18px
+                .texto_rf
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    width: 90%
+                    padding: 20px
+                    border: 1px solid #1a1818
+                    border-radius: 20px
+                    h3
+                        font-weight: 600
+                        font-size: 1.5rem
+                        color: #1e3d58
+                        padding: 5px
+                    p
+                        font-size: 1rem
+                        width: 80%
+                        font-family: sans-serif
+                        padding: 5px
+                .imagen_rf
+                    @include flex_center()
+                    width: 220px
+                    margin-block: 20px
+                    button
+                        margin-top: 20px
+                    img
+                        border-radius: 20px
+                        cursor: pointer
+                    .ocultar
+                        display: none
+            #logo_y_texto_azul
+                background: #5dafdc1c
+            #contactame_img
+                background: #5dafdc1c
+
+#section_ObrasCivilesMenores
+    overflow-x: hidden
+    #descripcion_titulo2
+        background: #e48b17
+    #section_ObrasCivilesMenores_descripcion
+        display: flex
+        flex-direction: column
+        width: 100%
+        #descripcion2
+            display: flex
+            flex-direction: column
+            width: 100%
+            .content_nuestros_servicios
+                text-align: center
+                background: #e48b171a
+                h2
+                    color: #5c4919
+            .logo_y_texto_ocm
+                display: flex
+                flex-direction: column
+                align-items: center
+                .texto_ocm
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+                    width: 80%
+                    gap: 5px
+                    border: 1px solid #1a1818
+                    border-radius: 20px
+                    margin-block: 14px
+                    h3
+                        font-size: 1.6rem
+                        color: #4d4223
+                        font-weight: 600
+                        padding: 5px
+                    p
+                        padding: 10px
+                        font-size: 0.9rem
+                        width: 80%
+                        font-family: sans-serif
+                .imagen_ocm
+                    @include flex_center()
+                    width: 350px
+                    img
+                        border-radius: 20px
+                        margin-block: 20px
+                    .ocultar
+                        display: none
+            #logo_y_texto_naranja
+                background: #e09b401b
+            #contactame_img2
+                background: #e09b401b
+
+#section_Electricidad
+    overflow: hidden
+    #descripcion_titulo3
+        background: #dbd114
+    #section_Electricidad_descripcion
+        display: flex
+        flex-direction: column
+        width: 100%
+        #descripcion3
+            display: flex
+            flex-direction: column
+            width: 100%
+            .content_nuestros_servicios
+                text-align: center
+                background: #dcd21f2e
+                h2
+                    color: #75700a
+            .logo_y_texto_elec
+                display: flex
+                flex-direction: column
+                align-items: center
+                width: 100%
+                gap: 10%
+                .texto_elec
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    width: 80%
+                    gap: 5px
+                    border: 1px solid #1a1818
+                    border-radius: 20px
+                    margin-block: 10px
+                    h3
+                        font-size: 1.6rem
+                        color: #c5be48
+                        font-weight: 600
+                        padding: 5px
+                    p
+                        padding: 10px
+                        font-size: 0.9rem
+                        width: 80%
+                        font-family: sans-serif
+                .imagen_elec
+                    @include flex_center()
+                    width: 70%
+                    margin-block: 20px
+                    img
+                        border-radius: 20px
+                        margin-block: 10px
+                    .ocultar
+                        display: none
+            #logo_y_texto_amarillo
+                background: #dcd21f2e
+            #contactame_img3
+                background: #dcd21f2e
+
+#section_Jardineria
+    overflow: hidden
+    #descripcion_titulo4
+        background: #297429
+    #section_Jardineria_descripcion
+        display: flex
+        flex-direction: column
+        width: 100%
+        #descripcion4
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            width: 100%
+            .content_nuestros_servicios
+                text-align: center
+                background: #3a9c3a22
+                h2
+                    color: #0e690e
+            .logo_y_texto_jr
+                display: flex
+                flex-direction: column
+                align-items: center
+                gap: 5%
+                .texto_jr
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+                    width: 70%
+                    gap: 5px
+                    border: 1px solid #1a1818
+                    border-radius: 20px
+                    margin-block: 10px
+                    h3
+                        font-size: 1.6rem
+                        color: #46a857
+                    p
+                        padding: 10px
+                        font-size: 0.9rem
+                        width: 80%
+                        font-family: sans-serif
+                .imagen_jr
+                    @include flex_center()
+                    width: 58%
+                    margin-bottom: 20px
+                    img
+                        border-radius: 20px
+                        margin-block: 20px
+                    .ocultar
+                        display: none
+            #logo_y_texto_verde
+                background: #3a9c3a22
+
+footer
+    .contactame_text
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 15px
+        background: #0e690ebb
+        p
+            font-size: 0.8rem
+            font-family: sans-serif
+        img
+            width: 40px
+@keyframes slide 
+        0% 
+            margin-left: 0%
+        10%
+            margin-left: 0%
+        20%
+            margin-left: -100%
+        30%
+            margin-left: -100%
+        40%
+            margin-left: -200%
+        50%
+            margin-left: -200%
+        60%
+            margin-left: -300%
+        70%
+            margin-left: -300%
+        80%
+            margin-left: -400%
+        90%
+            margin-left: -400%
+        100%
+            margin-left: -500%
+@keyframes scale
+        0%
+            transform: scale(1)
+        50%
+            transform: scale(1.1)
+        100%
+            transform: scale(1)

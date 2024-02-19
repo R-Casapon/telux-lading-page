@@ -1,0 +1,773 @@
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #0691DA;
+}
+nav #nav_text {
+  display: flex;
+  justify-content: center;
+  font-size: small;
+  font-family: sans-serif;
+  color: white;
+  background: #43b0f1;
+  padding: 5px;
+  width: 100%;
+}
+nav #nav_menu_secciones {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+}
+nav #nav_menu_secciones #nav_menu_secciones_izq {
+  display: flex;
+}
+nav #nav_menu_secciones #nav_menu_secciones_izq #logo {
+  display: flex;
+}
+nav #nav_menu_secciones #nav_menu_secciones_izq #logo img {
+  width: 60px;
+}
+nav #nav_menu_secciones #nav_menu_secciones_centro {
+  display: flex;
+  align-items: center;
+}
+nav #nav_menu_secciones #nav_menu_secciones_centro #text_3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+nav #nav_menu_secciones #nav_menu_secciones_der {
+  display: flex;
+  align-items: center;
+  font-weight: 100;
+  background: #0691DA;
+  gap: 15px;
+}
+nav #nav_menu_secciones #nav_menu_secciones_der #anclas {
+  font-family: sans-serif;
+  color: white;
+  font-size: 0.7rem;
+}
+nav #nav_menu_secciones #nav_menu_secciones_der #anclas:hover {
+  cursor: pointer;
+  border-radius: 10px;
+  background: rgba(65, 163, 216, 0.5803921569);
+}
+nav #nav_menu_secciones #nav_menu_secciones_der .contenedor_Servicios {
+  position: relative;
+}
+nav #nav_menu_secciones #nav_menu_secciones_der .contenedor_Servicios .contenedor_Servicios_sub {
+  display: none;
+  position: absolute;
+  top: 100%;
+  z-index: 2;
+}
+nav #nav_menu_secciones #nav_menu_secciones_der .contenedor_Servicios:hover .contenedor_Servicios_sub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  font-family: sans-serif;
+  background: #dce3f2;
+  width: 170px;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 0.8rem;
+}
+nav #nav_menu_secciones #nav_menu_secciones_der .contenedor_Servicios:hover .contenedor_Servicios_sub .servicios:hover {
+  transform: scale(1.2);
+}
+nav #nav_menu_secciones #nav_menu_secciones_der .contenedor_Contacto {
+  position: relative;
+}
+nav #nav_menu_secciones #nav_menu_secciones_der .contenedor_Contacto .contenedor_Contacto_sub {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 1px;
+}
+nav #nav_menu_secciones #nav_menu_secciones_der .contenedor_Contacto .contenedor_Contacto_sub .persona {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px;
+  border-bottom: 1px solid #0691DA;
+}
+nav #nav_menu_secciones #nav_menu_secciones_der .contenedor_Contacto .contenedor_Contacto_sub .persona img {
+  width: 20px;
+}
+nav #nav_menu_secciones #nav_menu_secciones_der .contenedor_Contacto .contenedor_Contacto_sub .persona img:hover {
+  transform: scale(1.4);
+}
+nav #nav_menu_secciones #nav_menu_secciones_der .contenedor_Contacto:hover .contenedor_Contacto_sub {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  font-family: sans-serif;
+  background: #dce3f2;
+  width: 190px;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+}
+
+.slider-frame {
+  width: 100%;
+  animation: slide 14s infinite alternate;
+}
+.slider-frame ul {
+  display: flex;
+  width: 700%;
+}
+.slider-frame ul li {
+  list-style: none;
+  width: 100%;
+}
+.slider-frame ul li img {
+  width: 100%;
+  height: 450px;
+}
+
+.marcas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 5%;
+  padding: 10px;
+}
+.marcas img {
+  width: 70px;
+}
+
+.contactame_img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #1a1818;
+  width: 100%;
+}
+.contactame_img p {
+  font-size: 1.1rem;
+  color: #1e3d58;
+  font-weight: 500;
+  animation: scale 2s infinite alternate;
+}
+.contactame_img img {
+  width: 35px;
+}
+.contactame_img img:hover {
+  transform: scale(1.4);
+}
+
+.descripcion_titulo {
+  display: flex;
+  justify-content: center;
+  font-size: 1.1rem;
+  width: 100%;
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+.nuestros_servicios {
+  font-weight: 600;
+  padding: 10px;
+  font-size: 1.6rem;
+}
+
+#section_refrigeracion {
+  overflow-x: hidden;
+}
+#section_refrigeracion #section_refrigeracion_descripcion {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#section_refrigeracion #section_refrigeracion_descripcion #descripcion_titulo1 {
+  background: rgba(6, 144, 218, 0.1921568627);
+}
+#section_refrigeracion #section_refrigeracion_descripcion #descripcion {
+  width: 100%;
+}
+#section_refrigeracion #section_refrigeracion_descripcion #descripcion .content_nuestros_servicios {
+  text-align: center;
+  background: rgba(93, 175, 220, 0.1098039216);
+}
+#section_refrigeracion #section_refrigeracion_descripcion #descripcion h2 {
+  color: #1e3d58;
+}
+#section_refrigeracion #section_refrigeracion_descripcion #descripcion .logo_y_texto_rf {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 18px;
+}
+#section_refrigeracion #section_refrigeracion_descripcion #descripcion .logo_y_texto_rf .texto_rf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  padding: 20px;
+  border: 1px solid #1a1818;
+  border-radius: 20px;
+}
+#section_refrigeracion #section_refrigeracion_descripcion #descripcion .logo_y_texto_rf .texto_rf h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #1e3d58;
+  padding: 5px;
+}
+#section_refrigeracion #section_refrigeracion_descripcion #descripcion .logo_y_texto_rf .texto_rf p {
+  font-size: 1rem;
+  width: 80%;
+  font-family: sans-serif;
+  padding: 5px;
+}
+#section_refrigeracion #section_refrigeracion_descripcion #descripcion .logo_y_texto_rf .imagen_rf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  margin-block: 20px;
+}
+#section_refrigeracion #section_refrigeracion_descripcion #descripcion .logo_y_texto_rf .imagen_rf button {
+  margin-top: 20px;
+}
+#section_refrigeracion #section_refrigeracion_descripcion #descripcion .logo_y_texto_rf .imagen_rf img {
+  border-radius: 20px;
+  cursor: pointer;
+}
+#section_refrigeracion #section_refrigeracion_descripcion #descripcion .logo_y_texto_rf .imagen_rf .ocultar {
+  display: none;
+}
+#section_refrigeracion #section_refrigeracion_descripcion #descripcion #logo_y_texto_azul {
+  background: rgba(93, 175, 220, 0.1098039216);
+}
+#section_refrigeracion #section_refrigeracion_descripcion #descripcion #contactame_img {
+  background: rgba(93, 175, 220, 0.1098039216);
+}
+
+#section_ObrasCivilesMenores {
+  overflow-x: hidden;
+}
+#section_ObrasCivilesMenores #descripcion_titulo2 {
+  background: #e48b17;
+}
+#section_ObrasCivilesMenores #section_ObrasCivilesMenores_descripcion {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#section_ObrasCivilesMenores #section_ObrasCivilesMenores_descripcion #descripcion2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#section_ObrasCivilesMenores #section_ObrasCivilesMenores_descripcion #descripcion2 .content_nuestros_servicios {
+  text-align: center;
+  background: rgba(228, 139, 23, 0.1019607843);
+}
+#section_ObrasCivilesMenores #section_ObrasCivilesMenores_descripcion #descripcion2 .content_nuestros_servicios h2 {
+  color: #5c4919;
+}
+#section_ObrasCivilesMenores #section_ObrasCivilesMenores_descripcion #descripcion2 .logo_y_texto_ocm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#section_ObrasCivilesMenores #section_ObrasCivilesMenores_descripcion #descripcion2 .logo_y_texto_ocm .texto_ocm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  gap: 5px;
+  border: 1px solid #1a1818;
+  border-radius: 20px;
+  margin-block: 14px;
+}
+#section_ObrasCivilesMenores #section_ObrasCivilesMenores_descripcion #descripcion2 .logo_y_texto_ocm .texto_ocm h3 {
+  font-size: 1.6rem;
+  color: #4d4223;
+  font-weight: 600;
+  padding: 5px;
+}
+#section_ObrasCivilesMenores #section_ObrasCivilesMenores_descripcion #descripcion2 .logo_y_texto_ocm .texto_ocm p {
+  padding: 10px;
+  font-size: 0.9rem;
+  width: 80%;
+  font-family: sans-serif;
+}
+#section_ObrasCivilesMenores #section_ObrasCivilesMenores_descripcion #descripcion2 .logo_y_texto_ocm .imagen_ocm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+}
+#section_ObrasCivilesMenores #section_ObrasCivilesMenores_descripcion #descripcion2 .logo_y_texto_ocm .imagen_ocm img {
+  border-radius: 20px;
+  margin-block: 20px;
+}
+#section_ObrasCivilesMenores #section_ObrasCivilesMenores_descripcion #descripcion2 .logo_y_texto_ocm .imagen_ocm .ocultar {
+  display: none;
+}
+#section_ObrasCivilesMenores #section_ObrasCivilesMenores_descripcion #descripcion2 #logo_y_texto_naranja {
+  background: rgba(224, 155, 64, 0.1058823529);
+}
+#section_ObrasCivilesMenores #section_ObrasCivilesMenores_descripcion #descripcion2 #contactame_img2 {
+  background: rgba(224, 155, 64, 0.1058823529);
+}
+
+#section_Electricidad {
+  overflow: hidden;
+}
+#section_Electricidad #descripcion_titulo3 {
+  background: #dbd114;
+}
+#section_Electricidad #section_Electricidad_descripcion {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#section_Electricidad #section_Electricidad_descripcion #descripcion3 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#section_Electricidad #section_Electricidad_descripcion #descripcion3 .content_nuestros_servicios {
+  text-align: center;
+  background: rgba(220, 210, 31, 0.1803921569);
+}
+#section_Electricidad #section_Electricidad_descripcion #descripcion3 .content_nuestros_servicios h2 {
+  color: #75700a;
+}
+#section_Electricidad #section_Electricidad_descripcion #descripcion3 .logo_y_texto_elec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 10%;
+}
+#section_Electricidad #section_Electricidad_descripcion #descripcion3 .logo_y_texto_elec .texto_elec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  gap: 5px;
+  border: 1px solid #1a1818;
+  border-radius: 20px;
+  margin-block: 10px;
+}
+#section_Electricidad #section_Electricidad_descripcion #descripcion3 .logo_y_texto_elec .texto_elec h3 {
+  font-size: 1.6rem;
+  color: #c5be48;
+  font-weight: 600;
+  padding: 5px;
+}
+#section_Electricidad #section_Electricidad_descripcion #descripcion3 .logo_y_texto_elec .texto_elec p {
+  padding: 10px;
+  font-size: 0.9rem;
+  width: 80%;
+  font-family: sans-serif;
+}
+#section_Electricidad #section_Electricidad_descripcion #descripcion3 .logo_y_texto_elec .imagen_elec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin-block: 20px;
+}
+#section_Electricidad #section_Electricidad_descripcion #descripcion3 .logo_y_texto_elec .imagen_elec img {
+  border-radius: 20px;
+  margin-block: 10px;
+}
+#section_Electricidad #section_Electricidad_descripcion #descripcion3 .logo_y_texto_elec .imagen_elec .ocultar {
+  display: none;
+}
+#section_Electricidad #section_Electricidad_descripcion #descripcion3 #logo_y_texto_amarillo {
+  background: rgba(220, 210, 31, 0.1803921569);
+}
+#section_Electricidad #section_Electricidad_descripcion #descripcion3 #contactame_img3 {
+  background: rgba(220, 210, 31, 0.1803921569);
+}
+
+#section_Jardineria {
+  overflow: hidden;
+}
+#section_Jardineria #descripcion_titulo4 {
+  background: #297429;
+}
+#section_Jardineria #section_Jardineria_descripcion {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#section_Jardineria #section_Jardineria_descripcion #descripcion4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+}
+#section_Jardineria #section_Jardineria_descripcion #descripcion4 .content_nuestros_servicios {
+  text-align: center;
+  background: rgba(58, 156, 58, 0.1333333333);
+}
+#section_Jardineria #section_Jardineria_descripcion #descripcion4 .content_nuestros_servicios h2 {
+  color: #0e690e;
+}
+#section_Jardineria #section_Jardineria_descripcion #descripcion4 .logo_y_texto_jr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5%;
+}
+#section_Jardineria #section_Jardineria_descripcion #descripcion4 .logo_y_texto_jr .texto_jr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  gap: 5px;
+  border: 1px solid #1a1818;
+  border-radius: 20px;
+  margin-block: 10px;
+}
+#section_Jardineria #section_Jardineria_descripcion #descripcion4 .logo_y_texto_jr .texto_jr h3 {
+  font-size: 1.6rem;
+  color: #46a857;
+}
+#section_Jardineria #section_Jardineria_descripcion #descripcion4 .logo_y_texto_jr .texto_jr p {
+  padding: 10px;
+  font-size: 0.9rem;
+  width: 80%;
+  font-family: sans-serif;
+}
+#section_Jardineria #section_Jardineria_descripcion #descripcion4 .logo_y_texto_jr .imagen_jr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 58%;
+  margin-bottom: 20px;
+}
+#section_Jardineria #section_Jardineria_descripcion #descripcion4 .logo_y_texto_jr .imagen_jr img {
+  border-radius: 20px;
+  margin-block: 20px;
+}
+#section_Jardineria #section_Jardineria_descripcion #descripcion4 .logo_y_texto_jr .imagen_jr .ocultar {
+  display: none;
+}
+#section_Jardineria #section_Jardineria_descripcion #descripcion4 #logo_y_texto_verde {
+  background: rgba(58, 156, 58, 0.1333333333);
+}
+
+footer .contactame_text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: rgba(14, 105, 14, 0.7333333333);
+}
+footer .contactame_text p {
+  font-size: 0.8rem;
+  font-family: sans-serif;
+}
+footer .contactame_text img {
+  width: 40px;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0%;
+  }
+  10% {
+    margin-left: 0%;
+  }
+  20% {
+    margin-left: -100%;
+  }
+  30% {
+    margin-left: -100%;
+  }
+  40% {
+    margin-left: -200%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  60% {
+    margin-left: -300%;
+  }
+  70% {
+    margin-left: -300%;
+  }
+  80% {
+    margin-left: -400%;
+  }
+  90% {
+    margin-left: -400%;
+  }
+  100% {
+    margin-left: -500%;
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media (min-width: 720px) {
+  .slider-frame ul {
+    width: 700%;
+  }
+  .slider-frame ul li img {
+    width: 100%;
+    height: 550px;
+  }
+  .marcas img {
+    width: 80px;
+  }
+  nav #nav_text {
+    font-size: 0.8rem;
+  }
+  nav #nav_menu_secciones #nav_menu_secciones_centro #text_3 {
+    font-size: 2rem;
+  }
+  nav #nav_menu_secciones #nav_menu_secciones_der #anclas {
+    text-align: center;
+    font-size: 0.8rem;
+    width: 120px;
+  }
+  #section_refrigeracion #section_refrigeracion_descripcion #descripcion .logo_y_texto_rf .texto_rf {
+    width: 50%;
+  }
+  #section_refrigeracion #section_refrigeracion_descripcion #descripcion .logo_y_texto_rf .imagen_rf {
+    width: 250px;
+  }
+  #section_ObrasCivilesMenores #section_ObrasCivilesMenores_descripcion #descripcion2 .logo_y_texto_ocm .texto_ocm {
+    width: 50%;
+  }
+  #section_ObrasCivilesMenores #section_ObrasCivilesMenores_descripcion #descripcion2 .logo_y_texto_ocm .imagen_ocm {
+    width: 320px;
+  }
+  #section_Electricidad #section_Electricidad_descripcion #descripcion3 .logo_y_texto_elec .texto_elec {
+    width: 50%;
+  }
+  #section_Electricidad #section_Electricidad_descripcion #descripcion3 .logo_y_texto_elec .imagen_elec {
+    width: 335px;
+  }
+  #section_Jardineria #section_Jardineria_descripcion #descripcion4 .logo_y_texto_jr .texto_jr {
+    width: 50%;
+  }
+  #section_Jardineria #section_Jardineria_descripcion #descripcion4 .logo_y_texto_jr .imagen_jr {
+    width: 320px;
+  }
+  footer .contactame_text {
+    padding: 20px;
+  }
+  footer .contactame_text p {
+    font-size: 0.9rem;
+  }
+  footer .contactame_text img {
+    width: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .slider-frame ul {
+    width: 700%;
+  }
+  .slider-frame ul li img {
+    width: 100%;
+    height: 630px;
+  }
+  nav #nav_menu_secciones #nav_menu_secciones_izq #logo img {
+    width: 70px;
+  }
+  nav #nav_menu_secciones #nav_menu_secciones_der #anclas {
+    font-size: 0.8rem;
+  }
+  #section_refrigeracion #section_refrigeracion_descripcion #descripcion .logo_y_texto_rf {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10%;
+  }
+  #section_refrigeracion #section_refrigeracion_descripcion #descripcion .logo_y_texto_rf .texto_rf {
+    width: 36%;
+  }
+  #section_refrigeracion #section_refrigeracion_descripcion #descripcion .logo_y_texto_rf .imagen_rf {
+    width: 280px;
+  }
+  #section_ObrasCivilesMenores #section_ObrasCivilesMenores_descripcion #descripcion2 .logo_y_texto_ocm {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 10%;
+  }
+  #section_ObrasCivilesMenores #section_ObrasCivilesMenores_descripcion #descripcion2 .logo_y_texto_ocm .texto_ocm {
+    width: 36%;
+  }
+  #section_ObrasCivilesMenores #section_ObrasCivilesMenores_descripcion #descripcion2 .logo_y_texto_ocm .imagen_ocm {
+    width: 40%;
+  }
+  #section_Electricidad #section_Electricidad_descripcion #descripcion3 .logo_y_texto_elec {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 10%;
+  }
+  #section_Electricidad #section_Electricidad_descripcion #descripcion3 .logo_y_texto_elec .texto_elec {
+    width: 36%;
+  }
+  #section_Electricidad #section_Electricidad_descripcion #descripcion3 .logo_y_texto_elec .imagen_elec {
+    width: 40%;
+  }
+  #section_Jardineria #section_Jardineria_descripcion #descripcion4 .logo_y_texto_jr {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 10%;
+  }
+  #section_Jardineria #section_Jardineria_descripcion #descripcion4 .logo_y_texto_jr .texto_jr {
+    width: 36%;
+  }
+  #section_Jardineria #section_Jardineria_descripcion #descripcion4 .logo_y_texto_jr .imagen_jr {
+    width: 27%;
+  }
+  footer .contactame_text img {
+    width: 55px;
+  }
+}
+@media (min-width: 1200px) {
+  .slider-frame ul {
+    width: 700%;
+  }
+  .slider-frame ul li img {
+    width: 130%;
+    height: 720px;
+  }
+  .marcas img {
+    width: 100px;
+  }
+  nav #nav_text {
+    font-size: 0.9rem;
+  }
+  nav #nav_menu_secciones {
+    padding: 10px 80px;
+  }
+  nav #nav_menu_secciones #nav_menu_secciones_izq #logo img {
+    width: 90px;
+  }
+  nav #nav_menu_secciones #nav_menu_secciones_der {
+    width: 22%;
+    justify-content: space-between;
+  }
+  nav #nav_menu_secciones #nav_menu_secciones_der #anclas {
+    font-size: 1rem;
+  }
+  nav #nav_menu_secciones #nav_menu_secciones_der .contenedor_Servicios:hover .contenedor_Servicios_sub {
+    width: 220px;
+    font-size: 0.9rem;
+  }
+  nav #nav_menu_secciones #nav_menu_secciones_der .contenedor_Contacto:hover .contenedor_Contacto_sub {
+    width: 240px;
+    font-size: 0.9rem;
+  }
+  #section_refrigeracion #section_refrigeracion_descripcion #descripcion .logo_y_texto_rf .texto_rf {
+    width: 360px;
+  }
+  #section_refrigeracion #section_refrigeracion_descripcion #descripcion .logo_y_texto_rf .texto_rf h3 {
+    font-size: 1.6rem;
+  }
+  #section_refrigeracion #section_refrigeracion_descripcion #descripcion .logo_y_texto_rf .texto_rf p {
+    font-size: 0.9rem;
+  }
+  #section_refrigeracion #section_refrigeracion_descripcion #descripcion .logo_y_texto_rf .imagen_rf img {
+    width: 360px;
+  }
+  #section_ObrasCivilesMenores #descripcion_titulo2 {
+    font-size: 1.3rem;
+  }
+  #section_ObrasCivilesMenores #section_ObrasCivilesMenores_descripcion #descripcion2 .logo_y_texto_ocm .texto_ocm {
+    width: 350px;
+  }
+  #section_ObrasCivilesMenores #section_ObrasCivilesMenores_descripcion #descripcion2 .logo_y_texto_ocm .texto_ocm h3 {
+    font-size: 1.6rem;
+  }
+  #section_ObrasCivilesMenores #section_ObrasCivilesMenores_descripcion #descripcion2 .logo_y_texto_ocm .texto_ocm p {
+    font-size: 0.9rem;
+  }
+  #section_ObrasCivilesMenores #section_ObrasCivilesMenores_descripcion #descripcion2 .logo_y_texto_ocm .imagen_ocm {
+    width: 390px;
+  }
+  #section_Electricidad #descripcion_titulo3 {
+    font-size: 1.3rem;
+  }
+  #section_Electricidad #section_Electricidad_descripcion #descripcion3 .logo_y_texto_elec .texto_elec {
+    width: 400px;
+  }
+  #section_Electricidad #section_Electricidad_descripcion #descripcion3 .logo_y_texto_elec .texto_elec h3 {
+    font-size: 1.6rem;
+  }
+  #section_Electricidad #section_Electricidad_descripcion #descripcion3 .logo_y_texto_elec .texto_elec p {
+    font-size: 0.9rem;
+  }
+  #section_Electricidad #section_Electricidad_descripcion #descripcion3 .logo_y_texto_elec .imagen_elec {
+    width: 450px;
+  }
+  #section_Jardineria #descripcion_titulo4 {
+    font-size: 1.3rem;
+  }
+  #section_Jardineria #section_Jardineria_descripcion #descripcion4 .logo_y_texto_jr {
+    gap: 3%;
+  }
+  #section_Jardineria #section_Jardineria_descripcion #descripcion4 .logo_y_texto_jr .texto_jr {
+    width: 350px;
+  }
+  #section_Jardineria #section_Jardineria_descripcion #descripcion4 .logo_y_texto_jr .texto_jr h3 {
+    font-size: 1.6rem;
+  }
+  #section_Jardineria #section_Jardineria_descripcion #descripcion4 .logo_y_texto_jr .texto_jr p {
+    font-size: 1rem;
+  }
+  #section_Jardineria #section_Jardineria_descripcion #descripcion4 .logo_y_texto_jr .imagen_jr {
+    width: 400px;
+  }
+  #section_Jardineria #section_Jardineria_descripcion #descripcion4 .logo_y_texto_jr .imagen_jr img {
+    width: 250px;
+  }
+  #section_Jardineria #section_Jardineria_descripcion #descripcion4 #marca4 {
+    height: 190px;
+  }
+  #section_Jardineria #section_Jardineria_descripcion #descripcion4 #marca4 img {
+    margin-top: 40px;
+    width: 120px;
+  }
+  footer .content .content_bot {
+    width: 56%;
+  }
+}/*# sourceMappingURL=style.css.map */
