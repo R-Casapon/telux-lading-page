@@ -1,4 +1,3 @@
-// Pantalla de min 780px
 
 @media(min-width: 720px)
     .slider-frame
@@ -7,7 +6,7 @@
             li
                 img
                     width: 100%
-                    height: 550px
+                    height: 420px
     
     .marcas
         img
@@ -60,15 +59,26 @@
                     .texto_jr
                         width: 50%
                     .imagen_jr
-                        width: 320px
+                        width: 250px
 
     footer
         .contactame_text
+            .centro_telux
+                #text_3
+                    font-size: 1.5rem
+                #text_4
+                    font-size: 0.8rem
             padding: 20px
-            p
-                font-size: 0.9rem
             img
-                width: 50px
+                width: 64px
+            .direccion
+                p
+                    font-size: 0.8rem
+        .contactame_redes
+            .redes
+                img
+                    width: 30px
+                    margin-inline: 6px
 
 @media(min-width: 992px)
     .slider-frame
@@ -77,7 +87,7 @@
             li
                 img
                     width: 100%
-                    height: 630px
+                    height: 560px
     
     nav
         #nav_menu_secciones
@@ -145,12 +155,17 @@
                     .texto_jr
                         width: 36%
                     .imagen_jr
-                        width: 27%
+                        width: 280px
 
     footer
         .contactame_text
             img
-                width: 55px
+                width: 65px
+            .centro_telux
+                #text_3
+                    font-size: 1.4rem
+                #text_4
+                    font-size: 0.8rem
 
 @media(min-width: 1200px)
     .slider-frame
@@ -158,9 +173,10 @@
             width: 700%
             li
                 img
-                    width: 130%
-                    height: 720px
+                    width: 100%
+                    height: 700px
     .marcas
+        background: white
         img
             width: 100px
     nav
@@ -168,12 +184,17 @@
             font-size: 0.9rem
         #nav_menu_secciones
             padding: 10px 80px
+            #nav_menu_secciones_centro
+                #text_3
+                    font-size: 2.7rem
+                #text_4
+                    font-size: 0.7rem
             #nav_menu_secciones_izq
                 #logo
                     img
-                        width: 90px
+                        width: 110px
             #nav_menu_secciones_der
-                width: 22%
+                gap: 30%
                 justify-content: space-between
                 #anclas
                     font-size: 1rem
@@ -188,8 +209,11 @@
                         .contenedor_Contacto_sub
                             width: 240px
                             font-size: 0.9rem
-        
+                            .persona
+                                width: 200px
+    
     #section_refrigeracion
+        // width: 90%
         #section_refrigeracion_descripcion
             #descripcion_titulo
             #descripcion
@@ -240,7 +264,7 @@
         #section_Jardineria_descripcion
             #descripcion4
                 .logo_y_texto_jr
-                    gap: 3%
+                    gap: 5%
                     .texto_jr
                         width: 350px
                         h3
@@ -248,16 +272,37 @@
                         p
                             font-size: 1rem
                     .imagen_jr
-                        width: 400px
-                        img
-                            width: 250px
-                #marca4
-                    height: 190px
-                    img
-                        margin-top: 40px
-                        width: 120px
+                        width: 270px
     
     footer
-        .content
-            .content_bot
-                width: 56%
+        .contactame_text
+            img
+                width: 75px
+            .direccion
+                display: flex
+                gap: 10px
+                p
+                    font-size: 0.9rem
+            .redes
+                gap: 15px
+
+@media(min-width: 1700px)
+    .slider-frame
+        ul
+            width: 700%
+            li
+                img
+                    width: 100%
+                    height: 760px
+    
+    footer
+        .contactame_text
+            .centro_telux
+                #text_3
+                    font-size: 1.7rem
+                #text_4
+                    font-size: 0.9rem
+            .direccion
+                p
+                    font-size: 1rem
+

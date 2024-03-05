@@ -52,7 +52,7 @@ function leerDatos(dato) {
     
     const imagenElement = document.createElement('img');
     imagenElement.src = imagen;
-    imagenElement.classList.add('w-[45%]', 'rounded-lg',);
+    imagenElement.classList.add('w-[45%]', 'rounded-lg','lg:w-[39%]', '2xl:w-[40%]');
 
     const titulo_h1 = document.createElement('h1');
     titulo_h1.textContent = titulo;

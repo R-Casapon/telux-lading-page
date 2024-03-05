@@ -8,11 +8,13 @@ nav {
   justify-content: center;
   align-items: center;
   background: #0691DA;
+  font-family: "Playfair Display", serif;
+  cursor: context-menu;
 }
 nav #nav_text {
   display: flex;
   justify-content: center;
-  font-size: small;
+  font-size: 0.6rem;
   font-family: sans-serif;
   color: white;
   background: #43b0f1;
@@ -36,12 +38,20 @@ nav #nav_menu_secciones #nav_menu_secciones_izq #logo img {
 }
 nav #nav_menu_secciones #nav_menu_secciones_centro {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 nav #nav_menu_secciones #nav_menu_secciones_centro #text_3 {
   font-size: 1.3rem;
-  font-weight: bold;
+  font-weight: 300;
   color: #FFFFFF;
+}
+nav #nav_menu_secciones #nav_menu_secciones_centro #text_4 {
+  font-size: 0.6rem;
+  color: #FFFFFF;
+  border-top: 1px solid #FFFFFF;
+  width: 100%;
+  text-align: center;
 }
 nav #nav_menu_secciones #nav_menu_secciones_der {
   display: flex;
@@ -51,9 +61,9 @@ nav #nav_menu_secciones #nav_menu_secciones_der {
   gap: 15px;
 }
 nav #nav_menu_secciones #nav_menu_secciones_der #anclas {
-  font-family: sans-serif;
   color: white;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
+  font-weight: 600;
 }
 nav #nav_menu_secciones #nav_menu_secciones_der #anclas:hover {
   cursor: pointer;
@@ -73,6 +83,8 @@ nav #nav_menu_secciones #nav_menu_secciones_der .contenedor_Servicios:hover .con
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: absolute;
+  right: 1px;
   gap: 18px;
   font-family: sans-serif;
   background: #dce3f2;
@@ -97,7 +109,8 @@ nav #nav_menu_secciones #nav_menu_secciones_der .contenedor_Contacto .contenedor
   display: flex;
   justify-content: center;
   gap: 10px;
-  padding: 14px;
+  padding: 10px;
+  width: 180px;
   border-bottom: 1px solid #0691DA;
 }
 nav #nav_menu_secciones #nav_menu_secciones_der .contenedor_Contacto .contenedor_Contacto_sub .persona img {
@@ -112,6 +125,7 @@ nav #nav_menu_secciones #nav_menu_secciones_der .contenedor_Contacto:hover .cont
   justify-content: center;
   gap: 10px;
   font-family: sans-serif;
+  font-weight: 500;
   background: #dce3f2;
   width: 190px;
   gap: 10px;
@@ -134,7 +148,7 @@ nav #nav_menu_secciones #nav_menu_secciones_der .contenedor_Contacto:hover .cont
 }
 .slider-frame ul li img {
   width: 100%;
-  height: 450px;
+  height: 300px;
 }
 
 .marcas {
@@ -143,10 +157,10 @@ nav #nav_menu_secciones #nav_menu_secciones_der .contenedor_Contacto:hover .cont
   justify-content: center;
   width: 100%;
   gap: 5%;
-  padding: 10px;
+  padding: 15px;
 }
 .marcas img {
-  width: 70px;
+  width: 58px;
 }
 
 .contactame_img {
@@ -162,9 +176,11 @@ nav #nav_menu_secciones #nav_menu_secciones_der .contenedor_Contacto:hover .cont
   color: #1e3d58;
   font-weight: 500;
   animation: scale 2s infinite alternate;
+  font-family: "Playfair Display", serif;
 }
 .contactame_img img {
   width: 35px;
+  height: 35px;
 }
 .contactame_img img:hover {
   transform: scale(1.4);
@@ -173,10 +189,11 @@ nav #nav_menu_secciones #nav_menu_secciones_der .contenedor_Contacto:hover .cont
 .descripcion_titulo {
   display: flex;
   justify-content: center;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
   width: 100%;
   padding: 10px;
-  font-family: sans-serif;
+  font-family: "Playfair Display", serif;
 }
 
 .nuestros_servicios {
@@ -187,11 +204,11 @@ nav #nav_menu_secciones #nav_menu_secciones_der .contenedor_Contacto:hover .cont
 
 #section_refrigeracion {
   overflow-x: hidden;
+  cursor: context-menu;
 }
 #section_refrigeracion #section_refrigeracion_descripcion {
   display: flex;
   flex-direction: column;
-  width: 100%;
 }
 #section_refrigeracion #section_refrigeracion_descripcion #descripcion_titulo1 {
   background: rgba(6, 144, 218, 0.1921568627);
@@ -218,16 +235,16 @@ nav #nav_menu_secciones #nav_menu_secciones_der .contenedor_Contacto:hover .cont
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
   padding: 20px;
   border: 1px solid #1a1818;
   border-radius: 20px;
+  width: 98%;
 }
 #section_refrigeracion #section_refrigeracion_descripcion #descripcion .logo_y_texto_rf .texto_rf h3 {
   font-weight: 600;
   font-size: 1.5rem;
   color: #1e3d58;
-  padding: 5px;
+  margin: 4px 0px 12px 0px;
 }
 #section_refrigeracion #section_refrigeracion_descripcion #descripcion .logo_y_texto_rf .texto_rf p {
   font-size: 1rem;
@@ -248,7 +265,6 @@ nav #nav_menu_secciones #nav_menu_secciones_der .contenedor_Contacto:hover .cont
 }
 #section_refrigeracion #section_refrigeracion_descripcion #descripcion .logo_y_texto_rf .imagen_rf img {
   border-radius: 20px;
-  cursor: pointer;
 }
 #section_refrigeracion #section_refrigeracion_descripcion #descripcion .logo_y_texto_rf .imagen_rf .ocultar {
   display: none;
@@ -262,6 +278,7 @@ nav #nav_menu_secciones #nav_menu_secciones_der .contenedor_Contacto:hover .cont
 
 #section_ObrasCivilesMenores {
   overflow-x: hidden;
+  cursor: context-menu;
 }
 #section_ObrasCivilesMenores #descripcion_titulo2 {
   background: #e48b17;
@@ -334,6 +351,7 @@ nav #nav_menu_secciones #nav_menu_secciones_der .contenedor_Contacto:hover .cont
 
 #section_Electricidad {
   overflow: hidden;
+  cursor: context-menu;
 }
 #section_Electricidad #descripcion_titulo3 {
   background: #dbd114;
@@ -376,7 +394,6 @@ nav #nav_menu_secciones #nav_menu_secciones_der .contenedor_Contacto:hover .cont
   font-size: 1.6rem;
   color: #c5be48;
   font-weight: 600;
-  padding: 5px;
 }
 #section_Electricidad #section_Electricidad_descripcion #descripcion3 .logo_y_texto_elec .texto_elec p {
   padding: 10px;
@@ -408,6 +425,7 @@ nav #nav_menu_secciones #nav_menu_secciones_der .contenedor_Contacto:hover .cont
 
 #section_Jardineria {
   overflow: hidden;
+  cursor: context-menu;
 }
 #section_Jardineria #descripcion_titulo4 {
   background: #297429;
@@ -462,7 +480,7 @@ nav #nav_menu_secciones #nav_menu_secciones_der .contenedor_Contacto:hover .cont
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 58%;
+  width: 240px;
   margin-bottom: 20px;
 }
 #section_Jardineria #section_Jardineria_descripcion #descripcion4 .logo_y_texto_jr .imagen_jr img {
@@ -476,19 +494,51 @@ nav #nav_menu_secciones #nav_menu_secciones_der .contenedor_Contacto:hover .cont
   background: rgba(58, 156, 58, 0.1333333333);
 }
 
+footer {
+  cursor: context-menu;
+}
 footer .contactame_text {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
+  padding: 10px;
   background: rgba(14, 105, 14, 0.7333333333);
+  border-top: 1px solid #1a1818;
+  color: #FFFFFF;
 }
-footer .contactame_text p {
-  font-size: 0.8rem;
-  font-family: sans-serif;
+footer .contactame_text .centro_telux {
+  text-align: center;
+}
+footer .contactame_text .centro_telux #text_3 {
+  font-size: 1.1rem;
+  font-family: "Playfair Display", serif;
+}
+footer .contactame_text .centro_telux #text_4 {
+  border-top: 1px solid #FFFFFF;
+  font-size: 0.5rem;
+}
+footer .contactame_text .direccion p {
+  font-size: 0.6rem;
 }
 footer .contactame_text img {
-  width: 40px;
+  width: 50px;
+}
+footer .contactame_redes {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  color: white;
+}
+footer .contactame_redes .redes {
+  display: flex;
+  justify-content: center;
+}
+footer .contactame_redes .redes img {
+  width: 20px;
+  margin-inline: 3px;
+}
+footer .contactame_redes .redes img:hover {
+  transform: scale(1.4);
 }
 
 @keyframes slide {
@@ -543,7 +593,7 @@ footer .contactame_text img {
   }
   .slider-frame ul li img {
     width: 100%;
-    height: 550px;
+    height: 420px;
   }
   .marcas img {
     width: 80px;
@@ -581,16 +631,26 @@ footer .contactame_text img {
     width: 50%;
   }
   #section_Jardineria #section_Jardineria_descripcion #descripcion4 .logo_y_texto_jr .imagen_jr {
-    width: 320px;
+    width: 250px;
   }
   footer .contactame_text {
     padding: 20px;
   }
-  footer .contactame_text p {
-    font-size: 0.9rem;
+  footer .contactame_text .centro_telux #text_3 {
+    font-size: 1.5rem;
+  }
+  footer .contactame_text .centro_telux #text_4 {
+    font-size: 0.8rem;
   }
   footer .contactame_text img {
-    width: 50px;
+    width: 64px;
+  }
+  footer .contactame_text .direccion p {
+    font-size: 0.8rem;
+  }
+  footer .contactame_redes .redes img {
+    width: 30px;
+    margin-inline: 6px;
   }
 }
 @media (min-width: 992px) {
@@ -599,7 +659,7 @@ footer .contactame_text img {
   }
   .slider-frame ul li img {
     width: 100%;
-    height: 630px;
+    height: 560px;
   }
   nav #nav_menu_secciones #nav_menu_secciones_izq #logo img {
     width: 70px;
@@ -656,10 +716,16 @@ footer .contactame_text img {
     width: 36%;
   }
   #section_Jardineria #section_Jardineria_descripcion #descripcion4 .logo_y_texto_jr .imagen_jr {
-    width: 27%;
+    width: 280px;
   }
   footer .contactame_text img {
-    width: 55px;
+    width: 65px;
+  }
+  footer .contactame_text .centro_telux #text_3 {
+    font-size: 1.4rem;
+  }
+  footer .contactame_text .centro_telux #text_4 {
+    font-size: 0.8rem;
   }
 }
 @media (min-width: 1200px) {
@@ -667,8 +733,11 @@ footer .contactame_text img {
     width: 700%;
   }
   .slider-frame ul li img {
-    width: 130%;
-    height: 720px;
+    width: 100%;
+    height: 700px;
+  }
+  .marcas {
+    background: white;
   }
   .marcas img {
     width: 100px;
@@ -679,11 +748,17 @@ footer .contactame_text img {
   nav #nav_menu_secciones {
     padding: 10px 80px;
   }
+  nav #nav_menu_secciones #nav_menu_secciones_centro #text_3 {
+    font-size: 2.7rem;
+  }
+  nav #nav_menu_secciones #nav_menu_secciones_centro #text_4 {
+    font-size: 0.7rem;
+  }
   nav #nav_menu_secciones #nav_menu_secciones_izq #logo img {
-    width: 90px;
+    width: 110px;
   }
   nav #nav_menu_secciones #nav_menu_secciones_der {
-    width: 22%;
+    gap: 30%;
     justify-content: space-between;
   }
   nav #nav_menu_secciones #nav_menu_secciones_der #anclas {
@@ -696,6 +771,9 @@ footer .contactame_text img {
   nav #nav_menu_secciones #nav_menu_secciones_der .contenedor_Contacto:hover .contenedor_Contacto_sub {
     width: 240px;
     font-size: 0.9rem;
+  }
+  nav #nav_menu_secciones #nav_menu_secciones_der .contenedor_Contacto:hover .contenedor_Contacto_sub .persona {
+    width: 200px;
   }
   #section_refrigeracion #section_refrigeracion_descripcion #descripcion .logo_y_texto_rf .texto_rf {
     width: 360px;
@@ -743,7 +821,7 @@ footer .contactame_text img {
     font-size: 1.3rem;
   }
   #section_Jardineria #section_Jardineria_descripcion #descripcion4 .logo_y_texto_jr {
-    gap: 3%;
+    gap: 5%;
   }
   #section_Jardineria #section_Jardineria_descripcion #descripcion4 .logo_y_texto_jr .texto_jr {
     width: 350px;
@@ -755,19 +833,37 @@ footer .contactame_text img {
     font-size: 1rem;
   }
   #section_Jardineria #section_Jardineria_descripcion #descripcion4 .logo_y_texto_jr .imagen_jr {
-    width: 400px;
+    width: 270px;
   }
-  #section_Jardineria #section_Jardineria_descripcion #descripcion4 .logo_y_texto_jr .imagen_jr img {
-    width: 250px;
+  footer .contactame_text img {
+    width: 75px;
   }
-  #section_Jardineria #section_Jardineria_descripcion #descripcion4 #marca4 {
-    height: 190px;
+  footer .contactame_text .direccion {
+    display: flex;
+    gap: 10px;
   }
-  #section_Jardineria #section_Jardineria_descripcion #descripcion4 #marca4 img {
-    margin-top: 40px;
-    width: 120px;
+  footer .contactame_text .direccion p {
+    font-size: 0.9rem;
   }
-  footer .content .content_bot {
-    width: 56%;
+  footer .contactame_text .redes {
+    gap: 15px;
+  }
+}
+@media (min-width: 1700px) {
+  .slider-frame ul {
+    width: 700%;
+  }
+  .slider-frame ul li img {
+    width: 100%;
+    height: 760px;
+  }
+  footer .contactame_text .centro_telux #text_3 {
+    font-size: 1.7rem;
+  }
+  footer .contactame_text .centro_telux #text_4 {
+    font-size: 0.9rem;
+  }
+  footer .contactame_text .direccion p {
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */

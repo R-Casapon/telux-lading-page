@@ -4,18 +4,19 @@ html
 nav
     @include flex(column, center, center)
     background: #0691DA
+    font-family: "Playfair Display", serif
+    cursor: context-menu
     #nav_text
         display: flex
         justify-content: center
-        font-size: small
+        font-size: 0.6rem
         font-family: sans-serif
         color: white
         background: #43b0f1
         padding: 5px
         width: 100%
     #nav_menu_secciones
-        display: flex
-        justify-content: space-between
+        @include flex(null,space-between, null )
         width: 100%
         padding: 10px
         #nav_menu_secciones_izq
@@ -25,22 +26,26 @@ nav
                 img
                     width: 60px
         #nav_menu_secciones_centro
-            display: flex
-            align-items: center
+            @include flex(column, null, center)
             #text_3
                 font-size: 1.3rem
-                font-weight: bold
+                font-weight: 300
                 color: #FFFFFF
+            #text_4
+                font-size: 0.6rem
+                color: #FFFFFF
+                border-top: 1px solid #FFFFFF
+                width: 100%
+                text-align: center
         #nav_menu_secciones_der
-                display: flex
-                align-items: center
+                @include flex(null, null, center)
                 font-weight: 100
                 background: #0691DA
                 gap: 15px
                 #anclas
-                    font-family: sans-serif
                     color: white
-                    font-size: 0.7rem
+                    font-size: 0.8rem
+                    font-weight: 600
                     &:hover
                         cursor: pointer
                         border-radius: 10px
@@ -57,6 +62,8 @@ nav
                             display: flex
                             flex-direction: column
                             align-items: center
+                            position: absolute
+                            right: 1px
                             gap: 18px
                             font-family: sans-serif
                             background: #dce3f2
@@ -78,7 +85,8 @@ nav
                             display: flex
                             justify-content: center
                             gap: 10px
-                            padding: 14px
+                            padding: 10px
+                            width: 180px
                             border-bottom: 1px solid #0691DA
                             img
                                 width: 20px
@@ -91,6 +99,7 @@ nav
                             justify-content: center
                             gap: 10px
                             font-family: sans-serif
+                            font-weight: 500
                             background: #dce3f2
                             width: 190px
                             gap: 10px
@@ -109,7 +118,7 @@ nav
                 width: 100%
                 img
                     width: 100%
-                    height: 450px
+                    height: 300px
 
 .marcas
     display: flex
@@ -117,9 +126,9 @@ nav
     justify-content: center
     width: 100%
     gap: 5%
-    padding: 10px
+    padding: 15px
     img
-        width: 70px
+        width: 58px
         
 .contactame_img
     display: flex
@@ -133,18 +142,21 @@ nav
         color: #1e3d58
         font-weight: 500
         animation: scale 2s infinite alternate
+        font-family: "Playfair Display", serif
     img
         width: 35px
+        height: 35px
         &:hover
             transform: scale(1.4)
 
 .descripcion_titulo
     display: flex
     justify-content: center
-    font-size: 1.1rem
+    font-size: 1.2rem
+    font-weight: 500
     width: 100%
     padding: 10px
-    font-family: sans-serif
+    font-family: "Playfair Display", serif
 
 .nuestros_servicios
     font-weight: 600
@@ -153,10 +165,9 @@ nav
 
 #section_refrigeracion
     overflow-x: hidden
+    cursor: context-menu
     #section_refrigeracion_descripcion
-        display: flex
-        flex-direction: column
-        width: 100%
+        @include flex(column, null, null)
         #descripcion_titulo1
             background: #0690da31
         #descripcion
@@ -168,24 +179,19 @@ nav
                 color: #1e3d58
             .logo_y_texto_rf
                 position: relative
-                display: flex
-                flex-direction: column
-                justify-content: center
-                align-items: center
+                @include flex(column, center, center)
                 padding: 18px
                 .texto_rf
-                    display: flex
-                    flex-direction: column
-                    align-items: center
-                    width: 90%
+                    @include flex(column, null, center)
                     padding: 20px
                     border: 1px solid #1a1818
                     border-radius: 20px
+                    width: 98%
                     h3
                         font-weight: 600
                         font-size: 1.5rem
                         color: #1e3d58
-                        padding: 5px
+                        margin: 4px 0px 12px 0px
                     p
                         font-size: 1rem
                         width: 80%
@@ -199,7 +205,6 @@ nav
                         margin-top: 20px
                     img
                         border-radius: 20px
-                        cursor: pointer
                     .ocultar
                         display: none
             #logo_y_texto_azul
@@ -209,6 +214,7 @@ nav
 
 #section_ObrasCivilesMenores
     overflow-x: hidden
+    cursor: context-menu
     #descripcion_titulo2
         background: #e48b17
     #section_ObrasCivilesMenores_descripcion
@@ -263,6 +269,7 @@ nav
 
 #section_Electricidad
     overflow: hidden
+    cursor: context-menu
     #descripcion_titulo3
         background: #dbd114
     #section_Electricidad_descripcion
@@ -297,7 +304,6 @@ nav
                         font-size: 1.6rem
                         color: #c5be48
                         font-weight: 600
-                        padding: 5px
                     p
                         padding: 10px
                         font-size: 0.9rem
@@ -319,6 +325,7 @@ nav
 
 #section_Jardineria
     overflow: hidden
+    cursor: context-menu
     #descripcion_titulo4
         background: #297429
     #section_Jardineria_descripcion
@@ -360,7 +367,7 @@ nav
                         font-family: sans-serif
                 .imagen_jr
                     @include flex_center()
-                    width: 58%
+                    width: 240px
                     margin-bottom: 20px
                     img
                         border-radius: 20px
@@ -371,17 +378,44 @@ nav
                 background: #3a9c3a22
 
 footer
+    cursor: context-menu
     .contactame_text
         display: flex
         justify-content: space-between
         align-items: center
-        padding: 15px
+        padding: 10px
         background: #0e690ebb
-        p
-            font-size: 0.8rem
-            font-family: sans-serif
+        border-top: 1px solid #1a1818
+        color: #FFFFFF
+        .centro_telux
+            text-align: center
+            #text_3
+                font-size: 1.1rem
+                font-family: "Playfair Display", serif
+            #text_4
+                border-top: 1px solid #FFFFFF
+                font-size: 0.5rem
+        .direccion
+            p
+                font-size: 0.6rem
         img
-            width: 40px
+            width: 50px
+    .contactame_redes
+        display: flex
+        justify-content: space-around
+        text-align: center
+        color: white
+        .redes
+            display: flex
+            justify-content: center
+            img
+                width: 20px
+                margin-inline: 3px
+                &:hover
+                    transform: scale(1.4)
+    
+
+            
 @keyframes slide 
         0% 
             margin-left: 0%
